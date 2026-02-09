@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Inventory - AutoPremium</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <nav>
+            <div class="logo">🚗 AutoPremium</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="inventory.html" class="active">Inventory</a></li>
+                <li><a href="financing.html">Financing</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="header-content">
+            <h1>Browse Our Inventory</h1>
+            <p>Find your perfect vehicle from our premium selection</p>
+        </div>
+    </section>
+
+    <!-- Inventory Section -->
+    <section class="inventory-section">
+        <div class="inventory-container">
+            <!-- Sidebar Filters -->
+            <aside class="filter-sidebar">
+                <h3>Filter Vehicles</h3>
+                
+                <div class="filter-group">
+                    <h4>Type</h4>
+                    <label><input type="checkbox" value="sedan"> Sedan</label>
+                    <label><input type="checkbox" value="suv"> SUV</label>
+                    <label><input type="checkbox" value="truck"> Truck</label>
+                    <label><input type="checkbox" value="sports"> Sports Car</label>
+                    <label><input type="checkbox" value="luxury"> Luxury</label>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Price Range</h4>
+                    <label><input type="checkbox" value="0-20000"> Under $20,000</label>
+                    <label><input type="checkbox" value="20000-40000"> $20,000 - $40,000</label>
+                    <label><input type="checkbox" value="40000-60000"> $40,000 - $60,000</label>
+                    <label><input type="checkbox" value="60000+"> Over $60,000</label>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Make</h4>
+                    <label><input type="checkbox" value="toyota"> Toyota</label>
+                    <label><input type="checkbox" value="honda"> Honda</label>
+                    <label><input type="checkbox" value="ford"> Ford</label>
+                    <label><input type="checkbox" value="bmw"> BMW</label>
+                    <label><input type="checkbox" value="mercedes"> Mercedes-Benz</label>
+                    <label><input type="checkbox" value="tesla"> Tesla</label>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Year</h4>
+                    <label><input type="checkbox" value="2024"> 2024</label>
+                    <label><input type="checkbox" value="2023"> 2023</label>
+                    <label><input type="checkbox" value="2022"> 2022</label>
+                    <label><input type="checkbox" value="2021"> 2021</label>
+                    <label><input type="checkbox" value="2020"> 2020 & Older</label>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Fuel Type</h4>
+                    <label><input type="checkbox" value="gasoline"> Gasoline</label>
+                    <label><input type="checkbox" value="diesel"> Diesel</label>
+                    <label><input type="checkbox" value="hybrid"> Hybrid</label>
+                    <label><input type="checkbox" value="electric"> Electric</label>
+                </div>
+
+                <button class="reset-filters">Reset All Filters</button>
+            </aside>
+
+            <!-- Vehicle Listings -->
+            <div class="inventory-main">
+                <div class="inventory-toolbar">
+                    <p class="results-count">Showing <strong>12</strong> of 48 vehicles</p>
+                    <select class="sort-select">
+                        <option>Sort by: Featured</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                        <option>Year: Newest First</option>
+                        <option>Mileage: Low to High</option>
+                    </select>
+                </div>
+
+                <div class="vehicles-grid">
+                    <!-- Vehicle 1 -->
+                    <div class="vehicle-card" data-type="suv" data-price="45999">
+                        <div class="vehicle-badge">Certified</div>
+                        <div class="vehicle-image suv-img">
+                            <span class="vehicle-icon">🚙</span>
+                        </div>
+                        <div class="vehicle-details">
+                            <h3>2023 Premium SUV</h3>
+                            <div class="vehicle-specs">
+                                <span>🛣️ 15,000 mi</span>
+                                <span>⛽ Hybrid</span>
+                                <span>⚙️ Auto</span>
+                            </div>
+                            <div class="vehicle-features">
+                                <span>✓ AWD</span>
+                                <span>✓ Leather</span>
+                                <span>✓ Nav</span>
+                            </div>
+                            <p class="vehicle-price">$45,999</p>
+                            <div class="vehicle-actions">
+                                <button class="view-details-btn">View Details</button>
+                                <button class="schedule-test-btn">Test Drive</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vehicle 2 -->
+                    <div class="vehicle-card" data-type="sports" data-price="68500">
+                        <div class="vehicle-badge featured">Featured</div>
+                        <div class="vehicle-image sports-img">
+                            <span class="vehicle-icon">🏎️</span>
+                        </div>
+                        <div class="vehicle-details">
+                            <h3>2024 Sports Coupe</h3>
+                            <div class="vehicle-specs">
+                                <span>🛣️ 5,000 mi</span>
+                                <span>⛽ Petrol</span>
+                                <span>⚙️ Manual</span>
+                            </div>
+                            <div class="vehicle-features">
+                                <span>✓ RWD</span>
+                                <span>✓ Carbon Fiber</span>
+                                <span>✓ Sport+</span>
+                            </div>
+                            <p class="vehicle-price">$68,500</p>
+                            <div class="vehicle-actions">
+                                <button class="view-details-btn">View Details</button>
+                                <button class="schedule-test-btn">Test Drive</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vehicle 3 -->
+                    <div class="vehicle-card" data-type="sedan" data-price="38750">
+                        <div class="vehicle-image sedan-img">
+                            <span class="vehicle-icon">🚗</span>
+                        </div>
+                        <div class="vehicle-details">
+                            <h3>2023 Luxury Sedan</h3>
+                            <div class="vehicle-specs">
+                                <span>🛣️ 22,000 mi</span>
+                                <span>⛽ Diesel</span>
+                                <span>⚙️ Auto</span>
+                            </div>
+                            <div class="vehicle-features">
+                                <span>✓ AWD</span>
+                                <span>✓ Premium Sound</span>
+                                <span>✓ Sunroof</span>
+                            </div>
+                            <p class="vehicle-price">$38,750</p>
+                            <div class="vehicle-actions">
+                                <button class="view-details-btn">View Details</button>
+                                <button class="schedule-test-btn">Test Drive</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vehicle 4 -->
+                    <div class="vehicle-card" data-type="truck" data-price="52900">
+                        <div class="vehicle-image truck-img">
+                            <span class="vehicle-icon">🛻</span>
+                        </div>
+                        <div class="vehicle-details">
+                            <h3>2023 Heavy Duty Truck</h3>
+                            <div class="vehicle-specs">
+                                <span>🛣️ 18,500 mi</span>
+                                <span>⛽ Diesel</span>
+                                <span>⚙️ Auto</span>
+                            </div>
+                            <div class="vehicle-features">
+                                <span>✓ 4WD</span>
+                                <span>✓ Tow Package</span>
+                                <span>✓ Bed Liner</span>
+                            </div>
+                            <p class="vehicle-price">$52,900</p>
+                            <div class="vehicle-actions">
+                                <button class="view-details-btn">View Details</button>
+                                <button class="schedule-test-btn">Test Drive</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vehicle 5 -->
+                    <div class="vehicle-card" data-type="luxury" data-price="72500">
+                        <div class="vehicle-badge">Premium</div>
+                        <div class="vehicle-image luxury-img">
+                            <span class="vehicle-icon">💎</span>
+                        </div>
+                        <div class="vehicle-details">
+                            <h3>2024 Executive Sedan</h3>
+                            <div class="vehicle-specs">
+                                <span>🛣️ 3,200 mi</span>
+                                <span>⛽ Hybrid</span>
+                                <span>⚙️ Auto</span>
+                            </div>
+                            <div class="vehicle-features">
+                                <span>✓ Massage Seats</span>
+                                <span>✓ HUD</span>
+                                <span>✓ Autopilot</span>
+                            </div>
+                            <p class="vehicle-price">$72,500</p>
+                            <div class="vehicle-actions">
+                                <button class="view-details-btn">View Details</button>
+                                <button class="schedule-test-btn">Test Drive</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vehicle 6 -->
+                    <div class="vehicle-card" data-type="suv" data-price="34900">
+                        <div class="vehicle-image suv-img">
+                            <span class="vehicle-icon">🚙</span>
+                        </div>
+                        <div class="vehicle-details">
+                            <h3>2022 Compact SUV</h3>
+                            <div class="vehicle-specs">
+                                <span>🛣️ 28,000 mi</span>
+                                <span>⛽ Gasoline</span>
+                                <span>⚙️ Auto</span>
+                            </div>
+                            <div class="vehicle-features">
+                                <span>✓ AWD</span>
+                                <span>✓ Apple CarPlay</span>
+                                <span>✓ Backup Cam</span>
+                            </div>
+                            <p class="vehicle-price">$34,900</p>
+                            <div class="vehicle-actions">
+                                <button class="view-details-btn">View Details</button>
+                                <button class="schedule-test-btn">Test Drive</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vehicle 7 -->
+                    <div class="vehicle-card" data-type="sedan" data-price="29500">
+                        <div class="vehicle-image sedan-img">
+                            <span class="vehicle-icon">🚗</span>
+                        </div>
+                        <div class="vehicle-details">
+                            <h3>2022 Family Sedan</h3>
+                            <div class="vehicle-specs">
+                                <span>🛣️ 31,000 mi</span>
+                                <span>⛽ Gasoline</span>
+                                <span>⚙️ Auto</span>
+                            </div>
+                            <div class="vehicle-features">
+                                <span>✓ FWD</span>
+                                <span>✓ Lane Assist</span>
+                                <span>✓ Bluetooth</span>
+                            </div>
+                            <p class="vehicle-price">$29,500</p>
+                            <div class="vehicle-actions">
+                                <button class="view-details-btn">View Details</button>
+                                <button class="schedule-test-btn">Test Drive</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vehicle 8 -->
+                    <div class="vehicle-card" data-type="suv" data-price="58900">
+                        <div class="vehicle-badge featured">New Arrival</div>
+                        <div class="vehicle-image suv-img">
+                            <span class="vehicle-icon">🚙</span>
+                        </div>
+                        <div class="vehicle-details">
+                            <h3>2024 7-Seater SUV</h3>
+                            <div class="vehicle-specs">
+                                <span>🛣️ 1,200 mi</span>
+                                <span>⛽ Hybrid</span>
+                                <span>⚙️ Auto</span>
+                            </div>
+                            <div class="vehicle-features">
+                                <span>✓ AWD</span>
+                                <span>✓ 3rd Row</span>
+                                <span>✓ Premium Audio</span>
+                            </div>
+                            <p class="vehicle-price">$58,900</p>
+                            <div class="vehicle-actions">
+                                <button class="view-details-btn">View Details</button>
+                                <button class="schedule-test-btn">Test Drive</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vehicle 9 -->
+                    <div class="vehicle-card" data-type="sports" data-price="45200">
+                        <div class="vehicle-image sports-img">
+                            <span class="vehicle-icon">🏎️</span>
+                        </div>
+                        <div class="vehicle-details">
+                            <h3>2023 Sport Convertible</h3>
+                            <div class="vehicle-specs">
+                                <span>🛣️ 8,500 mi</span>
+                                <span>⛽ Gasoline</span>
+                                <span>⚙️ Auto</span>
+                            </div>
+                            <div class="vehicle-features">
+                                <span>✓ RWD</span>
+                                <span>✓ Soft Top</span>
+                                <span>✓ Performance</span>
+                            </div>
+                            <p class="vehicle-price">$45,200</p>
+                            <div class="vehicle-actions">
+                                <button class="view-details-btn">View Details</button>
+                                <button class="schedule-test-btn">Test Drive</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vehicle 10 -->
+                    <div class="vehicle-card" data-type="truck" data-price="41900">
+                        <div class="vehicle-image truck-img">
+                            <span class="vehicle-icon">🛻</span>
+                        </div>
+                        <div class="vehicle-details">
+                            <h3>2022 Crew Cab Truck</h3>
+                            <div class="vehicle-specs">
+                                <span>🛣️ 24,000 mi</span>
+                                <span>⛽ Gasoline</span>
+                                <span>⚙️ Auto</span>
+                            </div>
+                            <div class="vehicle-features">
+                                <span>✓ 4WD</span>
+                                <span>✓ Crew Cab</span>
+                                <span>✓ Toolbox</span>
+                            </div>
+                            <p class="vehicle-price">$41,900</p>
+                            <div class="vehicle-actions">
+                                <button class="view-details-btn">View Details</button>
+                                <button class="schedule-test-btn">Test Drive</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vehicle 11 -->
+                    <div class="vehicle-card" data-type="luxury" data-price="84900">
+                        <div class="vehicle-badge">Premium</div>
+                        <div class="vehicle-image luxury-img">
+                            <span class="vehicle-icon">💎</span>
+                        </div>
+                        <div class="vehicle-details">
+                            <h3>2024 Luxury SUV</h3>
+                            <div class="vehicle-specs">
+                                <span>🛣️ 2,100 mi</span>
+                                <span>⛽ Hybrid</span>
+                                <span>⚙️ Auto</span>
+                            </div>
+                            <div class="vehicle-features">
+                                <span>✓ Air Suspension</span>
+                                <span>✓ Panoramic Roof</span>
+                                <span>✓ Night Vision</span>
+                            </div>
+                            <p class="vehicle-price">$84,900</p>
+                            <div class="vehicle-actions">
+                                <button class="view-details-btn">View Details</button>
+                                <button class="schedule-test-btn">Test Drive</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vehicle 12 -->
+                    <div class="vehicle-card" data-type="sedan" data-price="26900">
+                        <div class="vehicle-image sedan-img">
+                            <span class="vehicle-icon">🚗</span>
+                        </div>
+                        <div class="vehicle-details">
+                            <h3>2021 Economy Sedan</h3>
+                            <div class="vehicle-specs">
+                                <span>🛣️ 35,000 mi</span>
+                                <span>⛽ Gasoline</span>
+                                <span>⚙️ Auto</span>
+                            </div>
+                            <div class="vehicle-features">
+                                <span>✓ FWD</span>
+                                <span>✓ Fuel Efficient</span>
+                                <span>✓ Clean Title</span>
+                            </div>
+                            <p class="vehicle-price">$26,900</p>
+                            <div class="vehicle-actions">
+                                <button class="view-details-btn">View Details</button>
+                                <button class="schedule-test-btn">Test Drive</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination">
+                    <button class="page-btn" disabled>«</button>
+                    <button class="page-btn active">1</button>
+                    <button class="page-btn">2</button>
+                    <button class="page-btn">3</button>
+                    <button class="page-btn">4</button>
+                    <button class="page-btn">»</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Need Help Finding the Perfect Vehicle?</h2>
+            <p>Our expert team is ready to assist you</p>
+            <a href="contact.html" class="cta-button">Contact Us Today</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 AutoPremium Dealership. All rights reserved.</p>
+        <p>Your trusted partner in finding the perfect vehicle</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

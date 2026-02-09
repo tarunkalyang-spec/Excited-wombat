@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - AutoPremium</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <nav>
+            <div class="logo">🚗 AutoPremium</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="inventory.html">Inventory</a></li>
+                <li><a href="financing.html">Financing</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="header-content">
+            <h1>Get In Touch</h1>
+            <p>We're here to help with all your automotive needs</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-main">
+        <div class="container">
+            <div class="contact-layout">
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h2>Send Us a Message</h2>
+                    <p>Have a question? Fill out the form below and we'll get back to you within 24 hours.</p>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">Email Address *</label>
+                                <input type="email" id="contactEmail" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactPhone">Phone Number *</label>
+                                <input type="tel" id="contactPhone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="preferredContact">Preferred Contact Method</label>
+                                <select id="preferredContact">
+                                    <option value="email">Email</option>
+                                    <option value="phone">Phone</option>
+                                    <option value="text">Text Message</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inquiryType">Type of Inquiry</label>
+                            <select id="inquiryType">
+                                <option value="general">General Question</option>
+                                <option value="vehicle">Vehicle Inquiry</option>
+                                <option value="financing">Financing Question</option>
+                                <option value="service">Service/Maintenance</option>
+                                <option value="trade">Trade-In Evaluation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="vehicleOfInterest">Vehicle of Interest (if applicable)</label>
+                            <input type="text" id="vehicleOfInterest" placeholder="e.g., 2023 Premium SUV">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" rows="6" required placeholder="Tell us how we can help you..."></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info-section">
+                    <h2>Contact Information</h2>
+
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <div class="info-icon">📍</div>
+                            <h3>Visit Our Showroom</h3>
+                            <p>123 Auto Street<br>City, State 12345<br>United States</p>
+                            <a href="#" class="info-link">Get Directions →</a>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">📞</div>
+                            <h3>Call Us</h3>
+                            <p><strong>Sales:</strong> (555) 123-4567<br>
+                            <strong>Service:</strong> (555) 123-4568<br>
+                            <strong>Finance:</strong> (555) 123-4569</p>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">✉️</div>
+                            <h3>Email Us</h3>
+                            <p><strong>Sales:</strong> sales@autopremium.com<br>
+                            <strong>Service:</strong> service@autopremium.com<br>
+                            <strong>General:</strong> info@autopremium.com</p>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">🕒</div>
+                            <h3>Business Hours</h3>
+                            <p><strong>Monday-Friday:</strong> 9AM - 7PM<br>
+                            <strong>Saturday:</strong> 9AM - 6PM<br>
+                            <strong>Sunday:</strong> 11AM - 5PM</p>
+                        </div>
+                    </div>
+
+                    <div class="social-section">
+                        <h3>Follow Us</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-btn">Facebook</a>
+                            <a href="#" class="social-btn">Instagram</a>
+                            <a href="#" class="social-btn">Twitter</a>
+                            <a href="#" class="social-btn">YouTube</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Test Drive -->
+    <section class="test-drive-section">
+        <div class="container">
+            <h2 class="section-title">Schedule a Test Drive</h2>
+            <p class="section-subtitle">Experience your next vehicle today</p>
+
+            <form class="test-drive-form" id="testDriveForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="tdName">Full Name *</label>
+                        <input type="text" id="tdName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tdEmail">Email *</label>
+                        <input type="email" id="tdEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tdPhone">Phone *</label>
+                        <input type="tel" id="tdPhone" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="tdVehicle">Vehicle *</label>
+                        <input type="text" id="tdVehicle" placeholder="Which vehicle would you like to test drive?" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tdDate">Preferred Date *</label>
+                        <input type="date" id="tdDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tdTime">Preferred Time *</label>
+                        <select id="tdTime" required>
+                            <option value="">Select Time</option>
+                            <option value="9am">9:00 AM</option>
+                            <option value="10am">10:00 AM</option>
+                            <option value="11am">11:00 AM</option>
+                            <option value="12pm">12:00 PM</option>
+                            <option value="1pm">1:00 PM</option>
+                            <option value="2pm">2:00 PM</option>
+                            <option value="3pm">3:00 PM</option>
+                            <option value="4pm">4:00 PM</option>
+                            <option value="5pm">5:00 PM</option>
+                            <option value="6pm">6:00 PM</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="tdComments">Additional Comments</label>
+                    <textarea id="tdComments" rows="3" placeholder="Any special requests or questions?"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Schedule Test Drive</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="map-placeholder">
+            <div class="map-content">
+                <h3>🗺️ Find Us Here</h3>
+                <p>123 Auto Street, City, State 12345</p>
+                <p>Conveniently located with easy highway access</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="contact-faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>Do I need an appointment?</h4>
+                    <p>While appointments are not required, we recommend scheduling one to ensure a sales consultant is available to give you their full attention.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Can I trade in my current vehicle?</h4>
+                    <p>Absolutely! We accept all trade-ins and offer fair market value. Bring your vehicle and we'll provide a free appraisal.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Do you deliver vehicles?</h4>
+                    <p>Yes! We offer delivery services within a 100-mile radius. Contact us for details and pricing.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>What forms of payment do you accept?</h4>
+                    <p>We accept cash, certified checks, financing through our lenders, and can work with your bank or credit union.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Do you offer warranties?</h4>
+                    <p>Yes! We offer extended warranty options on most vehicles. Ask your sales consultant for details.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Can I see a vehicle history report?</h4>
+                    <p>Every vehicle comes with a free CARFAX or AutoCheck report. We believe in complete transparency.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="quick-links-section">
+        <div class="container">
+            <h2 class="section-title">Quick Actions</h2>
+            <div class="quick-links-grid">
+                <a href="inventory.html" class="quick-link-card">
+                    <div class="quick-link-icon">🚗</div>
+                    <h3>Browse Inventory</h3>
+                    <p>View our current selection</p>
+                </a>
+                <a href="financing.html" class="quick-link-card">
+                    <div class="quick-link-icon">💰</div>
+                    <h3>Get Pre-Approved</h3>
+                    <p>Apply for financing online</p>
+                </a>
+                <a href="#testDriveForm" class="quick-link-card">
+                    <div class="quick-link-icon">🔑</div>
+                    <h3>Schedule Test Drive</h3>
+                    <p>Book your appointment</p>
+                </a>
+                <a href="#" class="quick-link-card">
+                    <div class="quick-link-icon">💵</div>
+                    <h3>Value Your Trade</h3>
+                    <p>Get an instant estimate</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 AutoPremium Dealership. All rights reserved.</p>
+        <p>Your trusted partner in finding the perfect vehicle</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

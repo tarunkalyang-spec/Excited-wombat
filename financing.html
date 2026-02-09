@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financing - AutoPremium</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <nav>
+            <div class="logo">🚗 AutoPremium</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="inventory.html">Inventory</a></li>
+                <li><a href="financing.html" class="active">Financing</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="header-content">
+            <h1>Auto Financing Made Easy</h1>
+            <p>Flexible payment options tailored to your budget</p>
+        </div>
+    </section>
+
+    <!-- Financing Options -->
+    <section class="financing-options">
+        <div class="container">
+            <h2 class="section-title">Why Finance With Us?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">✅</div>
+                    <h3>Quick Approval</h3>
+                    <p>Get pre-approved in minutes with our streamlined process</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3>Competitive Rates</h3>
+                    <p>We work with multiple lenders to find you the best rates</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🤝</div>
+                    <h3>Flexible Terms</h3>
+                    <p>Choose from 24 to 84-month financing options</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔒</div>
+                    <h3>Bad Credit OK</h3>
+                    <p>We work with all credit types - everyone approved!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Finance Calculator -->
+    <section class="calculator-section">
+        <div class="container">
+            <h2 class="section-title">Payment Calculator</h2>
+            <p class="section-subtitle">Estimate your monthly payments</p>
+            
+            <div class="calculator-container">
+                <div class="calculator-inputs">
+                    <div class="input-group">
+                        <label for="vehiclePrice">Vehicle Price ($)</label>
+                        <input type="number" id="vehiclePrice" value="35000" min="0" step="1000">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="downPayment">Down Payment ($)</label>
+                        <input type="number" id="downPayment" value="5000" min="0" step="500">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="interestRate">Interest Rate (%)</label>
+                        <input type="number" id="interestRate" value="4.5" min="0" max="30" step="0.1">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="loanTerm">Loan Term (months)</label>
+                        <select id="loanTerm">
+                            <option value="24">24 months</option>
+                            <option value="36">36 months</option>
+                            <option value="48">48 months</option>
+                            <option value="60" selected>60 months</option>
+                            <option value="72">72 months</option>
+                            <option value="84">84 months</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="tradeInValue">Trade-In Value ($)</label>
+                        <input type="number" id="tradeInValue" value="0" min="0" step="500">
+                    </div>
+
+                    <button class="calculate-btn" id="calculateBtn">Calculate Payment</button>
+                </div>
+
+                <div class="calculator-results">
+                    <h3>Your Estimated Payment</h3>
+                    <div class="monthly-payment">
+                        <span class="payment-label">Monthly Payment:</span>
+                        <span class="payment-amount" id="monthlyPayment">$560</span>
+                    </div>
+                    
+                    <div class="payment-breakdown">
+                        <div class="breakdown-item">
+                            <span>Loan Amount:</span>
+                            <span id="loanAmount">$30,000</span>
+                        </div>
+                        <div class="breakdown-item">
+                            <span>Total Interest:</span>
+                            <span id="totalInterest">$3,600</span>
+                        </div>
+                        <div class="breakdown-item">
+                            <span>Total Payment:</span>
+                            <span id="totalPayment">$33,600</span>
+                        </div>
+                    </div>
+
+                    <p class="disclaimer">*This is an estimate only. Actual rates may vary based on credit approval.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Financing Application -->
+    <section class="application-section">
+        <div class="container">
+            <h2 class="section-title">Apply for Financing</h2>
+            <p class="section-subtitle">Complete this form to get pre-approved today</p>
+
+            <form class="finance-application" id="financeForm">
+                <div class="form-section">
+                    <h3>Personal Information</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="dob">Date of Birth *</label>
+                            <input type="date" id="dob" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="ssn">Social Security Number *</label>
+                            <input type="text" id="ssn" placeholder="XXX-XX-XXXX" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Address Information</h3>
+                    <div class="form-group">
+                        <label for="address">Street Address *</label>
+                        <input type="text" id="address" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="city">City *</label>
+                            <input type="text" id="city" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="state">State *</label>
+                            <select id="state" required>
+                                <option value="">Select State</option>
+                                <option value="AL">Alabama</option>
+                                <option value="CA">California</option>
+                                <option value="FL">Florida</option>
+                                <option value="NY">New York</option>
+                                <option value="TX">Texas</option>
+                                <!-- Add more states as needed -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="zip">ZIP Code *</label>
+                            <input type="text" id="zip" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="housing">Housing Status *</label>
+                            <select id="housing" required>
+                                <option value="">Select</option>
+                                <option value="own">Own</option>
+                                <option value="rent">Rent</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="monthlyPayment">Monthly Housing Payment ($) *</label>
+                            <input type="number" id="monthlyPayment" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Employment Information</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="employer">Employer Name *</label>
+                            <input type="text" id="employer" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="jobTitle">Job Title *</label>
+                            <input type="text" id="jobTitle" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="employmentLength">Time at Current Job *</label>
+                            <select id="employmentLength" required>
+                                <option value="">Select</option>
+                                <option value="0-1">Less than 1 year</option>
+                                <option value="1-2">1-2 years</option>
+                                <option value="2-5">2-5 years</option>
+                                <option value="5+">5+ years</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="monthlyIncome">Gross Monthly Income ($) *</label>
+                            <input type="number" id="monthlyIncome" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Vehicle & Credit Information</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="vehicleInterest">Vehicle of Interest</label>
+                            <input type="text" id="vehicleInterest" placeholder="e.g., 2023 Premium SUV">
+                        </div>
+                        <div class="form-group">
+                            <label for="creditScore">Estimated Credit Score *</label>
+                            <select id="creditScore" required>
+                                <option value="">Select Range</option>
+                                <option value="excellent">Excellent (750+)</option>
+                                <option value="good">Good (700-749)</option>
+                                <option value="fair">Fair (650-699)</option>
+                                <option value="poor">Poor (600-649)</option>
+                                <option value="bad">Bad (Below 600)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tradeIn">Do you have a trade-in?</label>
+                        <select id="tradeIn">
+                            <option value="no">No</option>
+                            <option value="yes">Yes</option>
+                        </select>
+                    </div>
+
+                    <div id="tradeInDetails" style="display: none;">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="tradeInMake">Trade-In Make/Model</label>
+                                <input type="text" id="tradeInMake">
+                            </div>
+                            <div class="form-group">
+                                <label for="tradeInYear">Year</label>
+                                <input type="number" id="tradeInYear" min="1990" max="2024">
+                            </div>
+                            <div class="form-group">
+                                <label for="tradeInMileage">Mileage</label>
+                                <input type="number" id="tradeInMileage">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="termsAgree" required>
+                            I agree to the terms and conditions and authorize AutoPremium to obtain my credit report *
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-application">Submit Application</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Financing FAQs</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>What credit score do I need?</h4>
+                    <p>We work with all credit types! While higher scores get better rates, we have programs for everyone including those with bad credit or no credit.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How much should I put down?</h4>
+                    <p>We recommend 10-20% down, but we offer programs with as little as $0 down for qualified buyers.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I get pre-approved?</h4>
+                    <p>Yes! Submit our application and get pre-approved in minutes with no obligation to buy.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What documents do I need?</h4>
+                    <p>You'll need proof of income, proof of residence, valid driver's license, and proof of insurance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 AutoPremium Dealership. All rights reserved.</p>
+        <p>Your trusted partner in finding the perfect vehicle</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
